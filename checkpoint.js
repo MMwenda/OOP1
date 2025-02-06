@@ -65,28 +65,8 @@ class Product { //this class is used to create instances of products
     }
   }
   
-  // --- Testing the functionality ---
-  
-  // Create sample products
+  //Sample products
   const product1 = new Product(1, "Laptop", 1000);
   const product2 = new Product(2, "Smartphone", 500);
   const product3 = new Product(3, "Headphones", 150);
   
-  // Create a shopping cart instance
-  const cart = new ShoppingCart();
-  
-  // Add items to the cart
-  cart.addItem(product1, 1);
-  cart.addItem(product2, 2);
-  cart.addItem(product3, 1);
-  
-  // Display the cart
-  cart.displayCart();
-  
-  console.log(`------------{After removing}------------`);
-  
-  // Remove an item from the cart
-  cart.removeItem(2);
-  
-  // Display the cart again after removal
-  cart.displayCart();
